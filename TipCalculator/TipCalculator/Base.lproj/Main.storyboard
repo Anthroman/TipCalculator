@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tmf-gl-5Zh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tip Calculator View Controller-->
+        <scene sceneID="o8u-QQ-zDF">
+            <objects>
+                <viewController id="Tmf-gl-5Zh" customClass="TipCalculatorViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vjH-21-LKq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-04-1zd">
+                                <rect key="frame" x="0.0" y="336.5" width="414" height="414"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-VU-RuP">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-rc-Tlw" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="oneButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="ewj-v9-k4G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-O8-grG" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="fourButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="90i-T0-iHy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-Fi-JRv" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="207" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="sevenButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="RNR-2c-NPZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL7-VU-cJn" customClass="DarkCalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="310.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="darkGreen"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="decimalButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="AAB-wo-v3K"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-9I-C5L">
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwi-Fb-TBE" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nwi-Fb-TBE" secondAttribute="height" multiplier="1:1" id="R21-4B-2Xi"/>
+                                                </constraints>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="twoButtontapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="oHV-9h-tog"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oj-25-UQ2" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="fiveButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="26P-cr-MlF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kk-zc-n8x" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="207" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="eightButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="053-GP-pU6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cng-TI-Z14" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="310.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="zeroButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="eJn-py-g30"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-uw-Ame">
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-Dr-tF5" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="threeButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="CZP-M9-qZY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is7-qd-lKL" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="sixButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="v4a-Ul-ewP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5c-NB-oP7" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="207" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="nineButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="Jvr-0g-cBD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo4-2B-dav" customClass="CalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="310.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="mediumGreen"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Enter"/>
+                                                <connections>
+                                                    <action selector="enterButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="bi6-xl-iU1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="34R-oc-i5s">
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miO-Ya-mGs" customClass="DarkCalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="darkGreen"/>
+                                                <state key="normal" title="Great"/>
+                                                <connections>
+                                                    <action selector="twentyPercentButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="Qkz-K6-Ofv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn4-8w-AMp" customClass="DarkCalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="darkGreen"/>
+                                                <state key="normal" title="Good"/>
+                                                <connections>
+                                                    <action selector="fifteenPercentButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="pw9-vD-Pka"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWV-PC-00D" customClass="DarkCalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="207" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="darkGreen"/>
+                                                <state key="normal" title="Okay"/>
+                                                <connections>
+                                                    <action selector="tenPercentButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="uum-mo-z8B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-z4-Wvs" customClass="DarkCalculatorButton" customModule="TipCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="310.5" width="103.5" height="103.5"/>
+                                                <color key="backgroundColor" name="darkGreen"/>
+                                                <state key="normal" title="Poor"/>
+                                                <connections>
+                                                    <action selector="angryButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="6Qh-hb-qXZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFu-dO-EMu">
+                                <rect key="frame" x="106" y="786.5" width="202" height="40"/>
+                                <color key="backgroundColor" name="clayBrown"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Calculate a new tip!">
+                                    <color key="titleColor" name="mustardYellow"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="Tmf-gl-5Zh" eventType="touchUpInside" id="EdI-oR-s6s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How was your service?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfX-0h-bT5">
+                                <rect key="frame" x="103.5" y="152" width="207" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" name="mustardYellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(total)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-hd-GFZ">
+                                <rect key="frame" x="103.5" y="222" width="207" height="54.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" name="mustardYellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter amount." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktb-Yh-jo6">
+                                <rect key="frame" x="103.5" y="99.5" width="207" height="27.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" name="mustardYellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="38-512" translatesAutoresizingMaskIntoConstraints="NO" id="kCJ-vm-jM8">
+                                <rect key="frame" x="328.5" y="259.5" width="67.5" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kCJ-vm-jM8" secondAttribute="height" multiplier="1:1" id="ie7-g6-SOA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="clayBrown"/>
+                        <constraints>
+                            <constraint firstItem="Pzc-04-1zd" firstAttribute="centerY" secondItem="psp-68-dgo" secondAttribute="centerY" multiplier="1.2" id="0Df-oY-TIO"/>
+                            <constraint firstItem="Pzc-04-1zd" firstAttribute="top" secondItem="kCJ-vm-jM8" secondAttribute="bottom" constant="10" id="1HO-nu-cOD"/>
+                            <constraint firstItem="pfX-0h-bT5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="psp-68-dgo" secondAttribute="leading" symbolic="YES" id="28y-vS-6s5"/>
+                            <constraint firstItem="ktb-Yh-jo6" firstAttribute="centerX" secondItem="psp-68-dgo" secondAttribute="centerX" id="6W5-we-JNL"/>
+                            <constraint firstItem="Pzc-04-1zd" firstAttribute="centerX" secondItem="psp-68-dgo" secondAttribute="centerX" id="8kI-dF-MVB"/>
+                            <constraint firstItem="kCJ-vm-jM8" firstAttribute="centerX" secondItem="miO-Ya-mGs" secondAttribute="centerX" id="Bqu-3T-hO8"/>
+                            <constraint firstItem="fcn-hd-GFZ" firstAttribute="width" secondItem="vjH-21-LKq" secondAttribute="width" multiplier="0.5" id="ETP-QH-mo1"/>
+                            <constraint firstItem="fcn-hd-GFZ" firstAttribute="centerX" secondItem="psp-68-dgo" secondAttribute="centerX" id="F4l-cA-XYa"/>
+                            <constraint firstItem="pfX-0h-bT5" firstAttribute="trailing" secondItem="ktb-Yh-jo6" secondAttribute="trailing" id="Fmc-sJ-mMm"/>
+                            <constraint firstItem="OgN-rc-Tlw" firstAttribute="height" secondItem="vjH-21-LKq" secondAttribute="height" multiplier="0.115513" id="G4G-7s-EdF"/>
+                            <constraint firstItem="pfX-0h-bT5" firstAttribute="width" secondItem="vjH-21-LKq" secondAttribute="width" multiplier="0.5" id="IMG-tG-2YR"/>
+                            <constraint firstItem="ktb-Yh-jo6" firstAttribute="centerY" secondItem="psp-68-dgo" secondAttribute="centerY" multiplier="0.25" id="Q6l-sv-s3f"/>
+                            <constraint firstItem="ktb-Yh-jo6" firstAttribute="width" secondItem="vjH-21-LKq" secondAttribute="width" multiplier="0.5" id="STy-Da-hBg"/>
+                            <constraint firstItem="psp-68-dgo" firstAttribute="trailing" secondItem="Pzc-04-1zd" secondAttribute="trailing" id="TEw-x2-W3s"/>
+                            <constraint firstItem="XFu-dO-EMu" firstAttribute="centerY" secondItem="psp-68-dgo" secondAttribute="centerY" multiplier="1.78" id="aW7-uB-MTF"/>
+                            <constraint firstItem="XFu-dO-EMu" firstAttribute="centerX" secondItem="psp-68-dgo" secondAttribute="centerX" id="e9K-Sb-fJS"/>
+                            <constraint firstItem="fcn-hd-GFZ" firstAttribute="centerY" secondItem="psp-68-dgo" secondAttribute="centerY" multiplier="0.55" id="fNX-Pz-EmG"/>
+                            <constraint firstItem="Pzc-04-1zd" firstAttribute="leading" secondItem="psp-68-dgo" secondAttribute="leading" id="ke4-RY-y86"/>
+                            <constraint firstItem="pfX-0h-bT5" firstAttribute="centerY" secondItem="psp-68-dgo" secondAttribute="centerY" multiplier="0.36" id="msw-Zr-hsC"/>
+                            <constraint firstItem="kCJ-vm-jM8" firstAttribute="width" secondItem="miO-Ya-mGs" secondAttribute="width" multiplier="0.65" id="wsk-c5-8cD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="psp-68-dgo"/>
+                    </view>
+                    <connections>
+                        <outlet property="basePriceLabel" destination="ktb-Yh-jo6" id="4AR-jJ-CPQ"/>
+                        <outlet property="downArrowImage" destination="kCJ-vm-jM8" id="a9Z-CS-FcH"/>
+                        <outlet property="tipAmountLabel" destination="pfX-0h-bT5" id="oar-Fo-ii8"/>
+                        <outlet property="totalAmountLabel" destination="fcn-hd-GFZ" id="ZuU-mU-3lh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2t9-ic-FpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266.66666666666669" y="-124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="38-512" width="512" height="512"/>
+        <namedColor name="clayBrown">
+            <color red="0.396078431372549" green="0.36078431372549019" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.58039215686274515" green="0.82745098039215681" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mediumGreen">
+            <color red="0.80000000000000004" green="0.92941176470588238" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mustardYellow">
+            <color red="0.88235294117647056" green="0.67843137254901964" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
